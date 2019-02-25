@@ -7,6 +7,7 @@ load('CameraParas.mat');
 LoadNecessaryData;
 load('PreComputedData.mat');
 disp('wait');
+%%=================
 %%====================== selected one corner point, that is for test
 CornerIndexList= [0, 0;-1, 1; -1, 0];% format [X,Y], X numbers of the colum, Y nums of the row
 [lineStack_h, centerStack_h, lineStack_v, centerStack_v, k_h, k_v]...
