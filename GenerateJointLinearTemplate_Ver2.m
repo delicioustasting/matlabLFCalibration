@@ -9,6 +9,7 @@ load('PreComputedData.mat');
 disp('wait');
 %%====================== selected one corner point, that is for test
 CornerIndexList= [0, 0;-1, 1; -1, 0];% format [X,Y], X numbers of the colum, Y nums of the row
+%CornerIndexList= [3,3;3,2;2,1];
 [lineStack_h, centerStack_h, lineStack_v, centerStack_v, k_h, k_v]...
     = SelectedCorner(CenterSubImg, CaliImg, CornerIndexList,...
     line_h, center_h, line_v, center_v, world_h, world_v);

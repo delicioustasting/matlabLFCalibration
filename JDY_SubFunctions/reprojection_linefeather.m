@@ -28,6 +28,7 @@ for i=1:k_h
     Point1_2Dlocal = Point1_On2Dline(1:2,1) - current_center;
     Point2_2Dlocal = Point2_On2Dline(1:2,1) - current_center;
     line_feather = cross([Point1_2Dlocal;1], [Point2_2Dlocal;1]); 
+    line_feather = line_feather./norm(line_feather(1:2,1)); % modified by JDY 20190227
     lineStack_reproject(:,i) = line_feather;
     %{
     boundary=[b;-(b*line_feather(1,1)+line_feather(3,1))/line_feather(2,1)];
