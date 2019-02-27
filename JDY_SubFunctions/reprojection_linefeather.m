@@ -6,6 +6,7 @@ function [lineStack_h2, k2_h, lineStack_reproject]=...
 filtered = false;
 lineStack_h2 = zeros(3, 3000);
 lineStack_reproject = zeros(3, size(lineStack_h,k_h));
+filtered = false;
 k2_h = 0;
 for i=1:k_h
     current_center = centerStack_h(:,i);

@@ -16,7 +16,6 @@ for i=1:k_h
     L_plane(i,3) =  - lineStack_h(3,i)*(pixelPitch/l_dis);
     L_plane(i,4) = (-1)*((lineStack_h(1:2,i))')*centerStack_h(1:2,i); % centerStack_h以像素为单位
     %---------- modified by JDY 20190225
-   
 end
 %%% [A,B,C,D]*[X,Y,Z,1] = 0;点在线上，求解系数矩阵行空间的两个极大线性无关组，作为3D line的表达形式
 L_3Dline = zeros(2,4);
